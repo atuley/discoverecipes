@@ -20,30 +20,15 @@ class DetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.layoutMargins = UIEdgeInsets.zero
         tableView.separatorInset = UIEdgeInsets.zero
         
-        let screenWidth  = UIScreen.main.fixedCoordinateSpace.bounds.width
-        
-        let gradient = CAGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 400)
-        
-        let startColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
-        let endColor = UIColor.black
-        
-        gradient.colors = [startColor.cgColor, endColor.cgColor]
-        
-        detailImageView.layer.insertSublayer(gradient, at: 0)
-
         loadRecipe()
     }
     
-    // REFACTOR
     override func viewDidLayoutSubviews() {
-        let  header = self.tableView.tableHeaderView
-        var frame = header?.frame
-        frame?.origin = self.tableView.bounds.origin
-        header?.frame = frame!
+        preventImageFromScrolling()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -88,8 +73,17 @@ class DetailTableViewController: UITableViewController {
                     self.detailImageView.image = Helpers().getDetailImage(url: url)
                 }
                 
+                self.detailImageView.layer.insertSublayer(Helpers().createImageGradient(), at: 0)
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    private func preventImageFromScrolling() {
+        let header = self.tableView.tableHeaderView
+        var frame = header?.frame
+        
+        frame?.origin = self.tableView.bounds.origin
+        header?.frame = frame!
     }
 }
