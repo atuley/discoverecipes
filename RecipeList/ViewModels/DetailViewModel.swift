@@ -47,4 +47,22 @@ class DetailViewModel {
             return recipeDetail.ingredientLines!
         }
     }
+    
+    var yummlyText: String {
+        get {
+            return recipeDetail.attribution.text!
+        }
+    }
+    
+    var yummlyLogo: URL {
+        get {
+            return recipeDetail.attribution.logo!
+        }
+    }
+    
+    var yummlyUrl: URL {
+        get {
+            return recipeDetail.attribution.url!
+        }
+    }
 }

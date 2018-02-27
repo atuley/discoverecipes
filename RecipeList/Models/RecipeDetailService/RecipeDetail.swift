@@ -15,5 +15,5 @@ struct RecipeDetail: Decodable {
     var images: [RecipeImage]
     var ingredientLines: [String]?
     var source: Source?
-    
+    var attribution: Attribution
 }

@@ -50,7 +50,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1g-dR-ybb">
-                                            <rect key="frame" x="12" y="174" width="36.333333333333336" height="21"/>
+                                            <rect key="frame" x="12" y="174" width="36" height="21"/>
                                             <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -111,7 +111,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="341"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeF-dx-PWV">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WeF-dx-PWV">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-Om-ddn">
@@ -142,7 +142,7 @@
                                 <constraint firstAttribute="trailing" secondItem="WeF-dx-PWV" secondAttribute="trailing" id="TuX-9a-0oy"/>
                                 <constraint firstItem="eoj-WR-GGB" firstAttribute="top" secondItem="Wwj-rP-snQ" secondAttribute="bottom" constant="23" id="ZHE-er-ie2"/>
                                 <constraint firstItem="WeF-dx-PWV" firstAttribute="top" secondItem="qih-Qa-gO2" secondAttribute="top" id="evi-Gg-zvd"/>
-                                <constraint firstAttribute="bottom" secondItem="WeF-dx-PWV" secondAttribute="bottom" constant="23" id="iGL-95-ibk"/>
+                                <constraint firstAttribute="bottom" secondItem="WeF-dx-PWV" secondAttribute="bottom" constant="29" id="iGL-95-ibk"/>
                                 <constraint firstItem="zfb-Om-ddn" firstAttribute="top" secondItem="qih-Qa-gO2" secondAttribute="top" constant="243" id="sFG-Bq-gl9"/>
                                 <constraint firstItem="Wwj-rP-snQ" firstAttribute="top" secondItem="zfb-Om-ddn" secondAttribute="bottom" constant="8" id="sZ7-If-vHY"/>
                             </constraints>
